@@ -1,0 +1,24 @@
+{
+  "name": "emissions-data-quality-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small REST API over the emissions data quality database",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc --noEmit",
+    "test": "tsx --test test/api.test.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

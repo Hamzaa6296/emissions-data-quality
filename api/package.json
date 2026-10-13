@@ -4,11 +4,11 @@
   "private": true,
   "description": "Small REST API over the emissions data quality database",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "start": "tsx src/server.ts",
-    "build": "tsc --noEmit",
-    "test": "tsx --test test/api.test.ts"
-  },
+  "dev": "tsx watch --env-file=.env src/server.ts",
+  "start": "tsx --env-file=.env src/server.ts",
+  "build": "tsc --noEmit",
+  "test": "tsx --test test/api.test.ts"
+},
   "license": "MIT",
   "dependencies": {
     "express": "^5.3.0",
